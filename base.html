@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les bases du formulaire</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <label for="name">Nom:</label> <br>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+            <br>
+            <label for="lastName">Prénom(s):</label> <br>
+            <input type="text" id="lastName" name="lastName" placeholder="Votre prénom(s)" required>
+            <br>
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            <br>
+            <label for="phone">Téléphone (+261)</label> <br>
+            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+            <br>
+            <label for="address">Adresse:</label> <br>
+            <input type="text" id="address" name="address" placeholder="Votre adresse">
+            <br>
+            <label for="country">Pays:</label> <br>
+            <select name="country" id="country">
+                <option value="">Sélectionnez un pays</option>
+                <option value="mg">Madagascar</option>
+                <option value="fr">France</option>
+                <option value="us">États-Unis</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Préference</legend>
+            <label for="sexe">Sexe:</label> <br>
+            <input type="radio" id="male" name="sexe" value="male">
+            <label for="male">Homme</label>
+            <input type="radio" id="female" name="sexe" value="female">
+            <label for="female">Femme</label>
+        </fieldset>
+        <br>
+        <label for="checkbox">
+            Accepter les conditions
+            <input type="checkbox" id="checkbox" name="checkbox" value="True" required>
+        </label>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+
+</html>
